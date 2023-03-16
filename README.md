@@ -1,7 +1,16 @@
-# Module-2 Coding Assignment
+# Coursera-Test
 
-Coursera course: HTML, CSS, and Javascript for Web Developers
+This repository contains all of the source code used in the course called HTML, CSS and Javascript for Web Developers in Coursera.
 
-TO SEE THE OUTPUT <a href="/Users/mac/Desktop/MyRepo/Assignments/Module2/index.html">CLICK HERE</a>
+Assignments :
+Module-1 - Quiz
+Module-2 - Coding
+Module-3 - Coding
+Module-4 - Coding
+Module-5 - Coding
 
-Ps:     If the link doesnt work, Wait for the website till it's online.
+Outputs :
+Module-2
+Module-3
+Module-4
+Module-5

@@ -17,10 +17,11 @@
             <div class="container">
 
                 <!-- PART 1: logo + Text -->
-                <div id="BOX3" class="navbar-header">
+                <div id="box3" class="navbar-header">
                     <a href="#" class="pull-left visible-md visible-lg ">    <!-- 'pull-left' will make any div after the img div in the top right of it -->
                         <div id="logo-image"></div>    <!--Logo creation-->
                     </a>
+
                     <div class="navbar-brand">  <!-- name of the brand -->
                         <a href="#"><h1>David Chu's China Bistro</h1></a>
                         <p>
@@ -29,26 +30,44 @@
                         </p>
                     </div>
                 
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"> <!-- This tag create the big button -->
+                        <!-- Those are the 3.spans that shows inside the button, When turned to mobile view -->
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
                 
 
-                </div>
-
-
-
                 <!-- PART 2: 4.Button for the (MENU-AWARDS-PHONE) -->
-                <div id="box4">
+                <div id="collapsable-nav" class="collapse navbar-collapse">     <!-- 'collapsable-nav' for API linked to data-target="#collapsable-nav" -->
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="menu-categories.html">
+                            <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>    <!-- we want the little menulogo to be hidden -->
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+                        </li>
+                        <li id="phone" class="hidden-xs">   <!-- 'hidden-xs' when you click the button, we dont want the phone to be shown -->
+                            <a href="tel:410-602-5008"> <!-- that attribute directly call the nbr -->
+                            <span>410-602-5008</span></a><div>* We Deliver</div>    <!-- div anhtajuha f css -->
+                        </li>
+                    </ul> <!-- #nav-list -->
+                </div> <!-- .collapse .navbar-collapse -->
 
 
 
 
-
-
-
-
-
-                </div>
-            </div>
-        </nav>
+            </div> <!-- .container -->
+        </nav> <!-- #header-nav -->
     </header>
 </body>
 </html>

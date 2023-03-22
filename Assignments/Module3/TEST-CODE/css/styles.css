@@ -12,7 +12,7 @@ body {
 }
 
 #logo-image{
-  background: url(/Users/mac/Desktop/TEST-CODE/images/restaurant-logo_large.png);
+  background: url(../images/restaurant-logo_large.png);
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -40,7 +40,7 @@ body {
 }
 
 
-  /* For the Paragraph */
+  /* For the Paragraph - starlogo */
 .navbar-brand p { /* Kosher cert */
   color: #000;
   text-transform: uppercase;
@@ -88,6 +88,75 @@ body {
   margin-top: -30px;
 }
 
+/* END HEADER */
 
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  /* nothing needed */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header - To make the img logo look smaller */
+  #logo-image {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* nothing needed */
+}
+
+/********** Extra small devices only **********/ 
+@media (max-width: 767px) {
+
+  /* TEXT: Restaurant name ( just for mobile mode ) */
+  .navbar-brand {
+    padding-top: 10px;  /* 'padding-top' was 25px in Large mode */
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width - font-size was 1.5em in Large mode */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;    /* font-size was .7em in Large mode */
+    margin-top: 12px;   /* margin-top was 15px in Large mode */
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  /* For the buttons (Menu) - glyph */
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph (span) */
+    font-size: 1em;   /* font-size was 1.8em in Large mode */
+    margin-right: 5px;
+  }
+
+      /*-------------- styling for the Tel located after the header -------------*/
+      #call-btn > a {     
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+      }
+      #xs-deliver {     /* Styling for the '* we deliver' text */
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+}
 
 
